@@ -1,0 +1,16 @@
+PODS:
+  - CoreDataNotification (0.1.0)
+
+DEPENDENCIES:
+  - CoreDataNotification (from `../`)
+
+EXTERNAL SOURCES:
+  CoreDataNotification:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CoreDataNotification: 8d998b49c8d8f07bfee6573a7c5722bc649bd5d0
+
+PODFILE CHECKSUM: 4efeef8dd920f3db1d9f332cda0fba00ef6b5360
+
+COCOAPODS: 1.2.0.beta.1
