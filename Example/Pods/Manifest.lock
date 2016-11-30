@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CoreDataNotification: 8d998b49c8d8f07bfee6573a7c5722bc649bd5d0
+  CoreDataNotification: f685976ab6a6cbc9837b3908b586c0dd6169926d
 
 PODFILE CHECKSUM: 4efeef8dd920f3db1d9f332cda0fba00ef6b5360
 

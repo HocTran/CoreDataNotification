@@ -19,9 +19,10 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 Lightweight notification observer for CoreData.
+Read README.md to see how it works.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/CoreDataNotification'
+  s.homepage         = 'https://github.com/HocTran/CoreDataNotification'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'HocTran' => 'tranhoc78@gmail.com' }
