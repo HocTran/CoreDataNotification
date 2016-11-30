@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CoreDataNotification_Example' do
+  pod 'CoreDataNotification', :path => '../'
+
+  target 'CoreDataNotification_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
