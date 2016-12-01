@@ -1,5 +1,7 @@
 PODS:
-  - CoreDataNotification (0.1.0)
+  - CoreDataNotification (0.1.0):
+    - CoreDataNotification/Core (= 0.1.0)
+  - CoreDataNotification/Core (0.1.0)
 
 DEPENDENCIES:
   - CoreDataNotification (from `../`)
@@ -9,7 +11,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CoreDataNotification: f685976ab6a6cbc9837b3908b586c0dd6169926d
+  CoreDataNotification: 0efb5bb6cc80130836ba5e6d054d7ddd973ead5b
 
 PODFILE CHECKSUM: 4efeef8dd920f3db1d9f332cda0fba00ef6b5360
 

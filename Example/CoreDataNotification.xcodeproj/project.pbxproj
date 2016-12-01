@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		032A428099D21163164E5919 /* Pods_CoreDataNotification_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94629180E9F86D90E8C6586 /* Pods_CoreDataNotification_Tests.framework */; };
+		152ED5E81DF0000300A39A98 /* RxExampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152ED5E71DF0000300A39A98 /* RxExampleTableViewController.swift */; };
+		152ED5EA1DF0001500A39A98 /* NotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152ED5E91DF0001500A39A98 /* NotificationTableViewController.swift */; };
 		154DBAF41DEEDA350064DF5F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154DBAF31DEEDA350064DF5F /* DataController.swift */; };
 		154DBAFA1DEEDBBD0064DF5F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154DBAF91DEEDBBD0064DF5F /* TableViewController.swift */; };
 		154DBAFC1DEEDD3F0064DF5F /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154DBAFB1DEEDD3F0064DF5F /* City.swift */; };
@@ -33,6 +35,8 @@
 
 /* Begin PBXFileReference section */
 		0C5DBAE46603EFE2575CD565 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		152ED5E71DF0000300A39A98 /* RxExampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxExampleTableViewController.swift; sourceTree = "<group>"; };
+		152ED5E91DF0001500A39A98 /* NotificationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
 		154DBAF31DEEDA350064DF5F /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		154DBAF91DEEDBBD0064DF5F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		154DBAFB1DEEDD3F0064DF5F /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
@@ -51,7 +55,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6EBC71F4A14C707C5CCB81A3 /* Pods-CoreDataNotification_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataNotification_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataNotification_Tests/Pods-CoreDataNotification_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		8396674B9C348F7EB60BB997 /* CoreDataNotification.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CoreDataNotification.podspec; path = ../CoreDataNotification.podspec; sourceTree = "<group>"; };
+		8396674B9C348F7EB60BB997 /* CoreDataNotification.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = CoreDataNotification.podspec; path = ../CoreDataNotification.podspec; sourceTree = "<group>"; };
 		9B78CEF9867327971EEBB1EE /* Pods_CoreDataNotification_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataNotification_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B94629180E9F86D90E8C6586 /* Pods_CoreDataNotification_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataNotification_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CACF61872C8BBAF079824435 /* Pods-CoreDataNotification_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataNotification_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataNotification_Example/Pods-CoreDataNotification_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				154DBAF91DEEDBBD0064DF5F /* TableViewController.swift */,
+				152ED5E91DF0001500A39A98 /* NotificationTableViewController.swift */,
+				152ED5E71DF0000300A39A98 /* RxExampleTableViewController.swift */,
 				154DBAF31DEEDA350064DF5F /* DataController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				154DBAF51DEEDA450064DF5F /* DB */,
@@ -386,6 +392,8 @@
 				154DBAF41DEEDA350064DF5F /* DataController.swift in Sources */,
 				154DBAFA1DEEDBBD0064DF5F /* TableViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				152ED5E81DF0000300A39A98 /* RxExampleTableViewController.swift in Sources */,
+				152ED5EA1DF0001500A39A98 /* NotificationTableViewController.swift in Sources */,
 				154DBAFF1DEEDFC60064DF5F /* CoreDataNotification.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

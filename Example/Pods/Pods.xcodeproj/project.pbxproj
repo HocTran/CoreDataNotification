@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		010821FDAC02C590F9C3A54F7243C551 /* Pods-CoreDataNotification_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A825242CA9DFEE194D935AA6453126 /* Pods-CoreDataNotification_Tests-dummy.m */; };
-		05AC517925C89CB0A4F8894386C6D8D4 /* CoreDataNotification-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28EFF54A910B42868C1D5BAC91E4DF7C /* CoreDataNotification-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05AC517925C89CB0A4F8894386C6D8D4 /* CoreDataNotification-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC40A8529F59DC59E20C83CBEDEF7F0C /* CoreDataNotification-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		152ED5F01DF0028500A39A98 /* CoreDataNotification+RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152ED5EF1DF0028500A39A98 /* CoreDataNotification+RxSwift.swift */; };
 		183870CF2F7E76FFD2BBF1124A894139 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		25C8C2160EE61CBEF0ECC93C4F817503 /* Pods-CoreDataNotification_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56587A0E5253BB4458F817FA6F320511 /* Pods-CoreDataNotification_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BEE4EAC02AF1EE09A0A7B28BF1EAA72 /* Pods-CoreDataNotification_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B3DB7CC4D2A6CD8773824A2AFF2C83 /* Pods-CoreDataNotification_Example-dummy.m */; };
 		500A1AB7696B8E47C1F9A8A670BDDBCF /* Pods-CoreDataNotification_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5DD180B836C44F95230D3E027ED8762 /* Pods-CoreDataNotification_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8453701D82AC5BC24D44B1EDEE470B95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		A27A6942CD98E681C6D67A10658F459D /* CoreDataNotification-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEE7A29D2EFCE1FD38A7611845A69DA /* CoreDataNotification-dummy.m */; };
-		DFC7E3572523D6D35906C7CFF62A0D93 /* CoreDataNotificationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAB4E147D43764B3314D140147AF29 /* CoreDataNotificationToken.swift */; };
+		A27A6942CD98E681C6D67A10658F459D /* CoreDataNotification-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8F576A74D6AC6F40C9E9C6C9E32C34 /* CoreDataNotification-dummy.m */; };
+		DFC7E3572523D6D35906C7CFF62A0D93 /* CoreDataNotificationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1092481CFE261507BA9D4BBBB10963CB /* CoreDataNotificationToken.swift */; };
 		F7FBE015AE6BAE1F97CDEDF2E758434C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,35 +34,36 @@
 		01BB233742A94AAB31F8AF518DA5A500 /* Pods-CoreDataNotification_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CoreDataNotification_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		026E770027660D5C9B9333B09E3E5BF6 /* Pods-CoreDataNotification_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoreDataNotification_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		02A825242CA9DFEE194D935AA6453126 /* Pods-CoreDataNotification_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoreDataNotification_Tests-dummy.m"; sourceTree = "<group>"; };
+		1092481CFE261507BA9D4BBBB10963CB /* CoreDataNotificationToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CoreDataNotificationToken.swift; sourceTree = "<group>"; };
+		11121ECE33166B833AC341358DF61ABC /* CoreDataNotification.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CoreDataNotification.modulemap; sourceTree = "<group>"; };
+		152ED5EF1DF0028500A39A98 /* CoreDataNotification+RxSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreDataNotification+RxSwift.swift"; sourceTree = "<group>"; };
+		169C2E7AABE18C5AE0D6ACBE2AE74A3E /* CoreDataNotification-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoreDataNotification-prefix.pch"; sourceTree = "<group>"; };
 		1E2C37498F2361D255BC680546B789E6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27E31E9D73944803A236E398FB389403 /* Pods-CoreDataNotification_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoreDataNotification_Tests-resources.sh"; sourceTree = "<group>"; };
-		28407F10A6011BBA5085F848402CDA3D /* Pods-CoreDataNotification_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CoreDataNotification_Example.modulemap"; sourceTree = "<group>"; };
-		28EFF54A910B42868C1D5BAC91E4DF7C /* CoreDataNotification-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoreDataNotification-umbrella.h"; sourceTree = "<group>"; };
+		28407F10A6011BBA5085F848402CDA3D /* Pods-CoreDataNotification_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CoreDataNotification_Example.modulemap"; sourceTree = "<group>"; };
 		37F951F87E86FEA850D9DA7F91B6DB03 /* Pods-CoreDataNotification_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreDataNotification_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3F154918562C7B6433FF0816C842BAD9 /* Pods-CoreDataNotification_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoreDataNotification_Example-frameworks.sh"; sourceTree = "<group>"; };
 		43F530B48FB0B61E28D2E03503D1B190 /* Pods-CoreDataNotification_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreDataNotification_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4971B4B70604169522BF7FF76E7FCB0A /* CoreDataNotification.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CoreDataNotification.xcconfig; sourceTree = "<group>"; };
 		56587A0E5253BB4458F817FA6F320511 /* Pods-CoreDataNotification_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoreDataNotification_Example-umbrella.h"; sourceTree = "<group>"; };
 		67A02ECF732AF9B2930181732F65A189 /* Pods-CoreDataNotification_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoreDataNotification_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		6CCB1B10C300CEB4DCFC1B47DF5F74B9 /* Pods-CoreDataNotification_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CoreDataNotification_Tests.modulemap"; sourceTree = "<group>"; };
-		75B08F5C6BE415DD91AD863C707CEB24 /* Pods_CoreDataNotification_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CoreDataNotification_Example.framework; path = "Pods-CoreDataNotification_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CCB1B10C300CEB4DCFC1B47DF5F74B9 /* Pods-CoreDataNotification_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CoreDataNotification_Tests.modulemap"; sourceTree = "<group>"; };
+		75B08F5C6BE415DD91AD863C707CEB24 /* Pods_CoreDataNotification_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataNotification_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7874FC27837D5EBB597D0FFE7976E8BD /* Pods-CoreDataNotification_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CoreDataNotification_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		79AAFE094F121743EE5F09AE55474F4C /* CoreDataNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CoreDataNotification.framework; path = CoreDataNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79AAFE094F121743EE5F09AE55474F4C /* CoreDataNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreDataNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED4E34EBC8890C7CE7EAEE5B5732021 /* Pods-CoreDataNotification_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoreDataNotification_Example-resources.sh"; sourceTree = "<group>"; };
-		87BD2B764B807245B867F5357C130FB0 /* CoreDataNotification.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CoreDataNotification.modulemap; sourceTree = "<group>"; };
-		8EEE7A29D2EFCE1FD38A7611845A69DA /* CoreDataNotification-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CoreDataNotification-dummy.m"; sourceTree = "<group>"; };
 		9020A4C29FCA5AACC081ECEC1530EBCD /* Pods-CoreDataNotification_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreDataNotification_Example.release.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9577EE3062BDDFE47A58FB0174C0B078 /* Pods-CoreDataNotification_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreDataNotification_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A5DD180B836C44F95230D3E027ED8762 /* Pods-CoreDataNotification_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoreDataNotification_Tests-umbrella.h"; sourceTree = "<group>"; };
-		B20FCC31D37BF6D968CCA2A0D7C6BCC8 /* CoreDataNotification.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CoreDataNotification.xcconfig; sourceTree = "<group>"; };
 		B8DB0CFA44B71A30061E507BF1247CBC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C37D4684107096E66655E9BD9840E81E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6B07B340D1BD06A5EDB107D91B1A6FE /* CoreDataNotification-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoreDataNotification-prefix.pch"; sourceTree = "<group>"; };
+		BC40A8529F59DC59E20C83CBEDEF7F0C /* CoreDataNotification-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoreDataNotification-umbrella.h"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E8CAB4E147D43764B3314D140147AF29 /* CoreDataNotificationToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CoreDataNotificationToken.swift; sourceTree = "<group>"; };
 		F4B3DB7CC4D2A6CD8773824A2AFF2C83 /* Pods-CoreDataNotification_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoreDataNotification_Example-dummy.m"; sourceTree = "<group>"; };
-		F75162B384FB27BAD425753D329CB5A9 /* Pods_CoreDataNotification_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CoreDataNotification_Tests.framework; path = "Pods-CoreDataNotification_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F75162B384FB27BAD425753D329CB5A9 /* Pods_CoreDataNotification_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataNotification_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA201CD7EDC184BD74A7CFD5BCDE88BD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF33ACC26542DECFB866B52F734BF8A6 /* Pods-CoreDataNotification_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoreDataNotification_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FF8F576A74D6AC6F40C9E9C6C9E32C34 /* CoreDataNotification-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CoreDataNotification-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		145B8B7058CA8B72D5712C1572B44A93 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				11121ECE33166B833AC341358DF61ABC /* CoreDataNotification.modulemap */,
+				4971B4B70604169522BF7FF76E7FCB0A /* CoreDataNotification.xcconfig */,
+				FF8F576A74D6AC6F40C9E9C6C9E32C34 /* CoreDataNotification-dummy.m */,
+				169C2E7AABE18C5AE0D6ACBE2AE74A3E /* CoreDataNotification-prefix.pch */,
+				BC40A8529F59DC59E20C83CBEDEF7F0C /* CoreDataNotification-umbrella.h */,
+				FA201CD7EDC184BD74A7CFD5BCDE88BD /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CoreDataNotification";
+			sourceTree = "<group>";
+		};
+		152ED5EE1DF0028500A39A98 /* RxSwiftExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				152ED5EF1DF0028500A39A98 /* CoreDataNotification+RxSwift.swift */,
+			);
+			path = RxSwiftExtensions;
+			sourceTree = "<group>";
+		};
+		17297AFAF7B9ED87C82CCDA266157ABA /* CoreDataNotification */ = {
+			isa = PBXGroup;
+			children = (
+				868B52E1711CC4A7E255868633BDAA8E /* Core */,
+				145B8B7058CA8B72D5712C1572B44A93 /* Support Files */,
+			);
+			name = CoreDataNotification;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		5D06BCCEF9C84B5832E5E2926724C6AD /* Pods-CoreDataNotification_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,16 +152,6 @@
 				F75162B384FB27BAD425753D329CB5A9 /* Pods_CoreDataNotification_Tests.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		716DE63B7284B69B2ED54A3493C30A49 /* CoreDataNotification */ = {
-			isa = PBXGroup;
-			children = (
-				8BB005C490C0A7F8F0A32DA98641FAE3 /* CoreDataNotification */,
-				FE72C2FC3C83FFE258D688EE58BE7E8E /* Support Files */,
-			);
-			name = CoreDataNotification;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -167,22 +191,12 @@
 			path = "Target Support Files/Pods-CoreDataNotification_Example";
 			sourceTree = "<group>";
 		};
-		8BB005C490C0A7F8F0A32DA98641FAE3 /* CoreDataNotification */ = {
+		868B52E1711CC4A7E255868633BDAA8E /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				B9B847FBEFEBC3EE37759755E02C46D7 /* Classes */,
+				CFC7437001AEB839705EE0DC2E05E1FE /* CoreDataNotification */,
 			);
-			name = CoreDataNotification;
-			path = CoreDataNotification;
-			sourceTree = "<group>";
-		};
-		B9B847FBEFEBC3EE37759755E02C46D7 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				E8CAB4E147D43764B3314D140147AF29 /* CoreDataNotificationToken.swift */,
-			);
-			name = Classes;
-			path = Classes;
+			name = Core;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -196,9 +210,26 @@
 		C7C2329665ED0B6C0374917D6C642BEC /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				716DE63B7284B69B2ED54A3493C30A49 /* CoreDataNotification */,
+				17297AFAF7B9ED87C82CCDA266157ABA /* CoreDataNotification */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C99629E20973CFBA8B90B23D5857A86D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1092481CFE261507BA9D4BBBB10963CB /* CoreDataNotificationToken.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CFC7437001AEB839705EE0DC2E05E1FE /* CoreDataNotification */ = {
+			isa = PBXGroup;
+			children = (
+				152ED5EE1DF0028500A39A98 /* RxSwiftExtensions */,
+				C99629E20973CFBA8B90B23D5857A86D /* Classes */,
+			);
+			path = CoreDataNotification;
 			sourceTree = "<group>";
 		};
 		D816D392AFEB1A45F1E3DE8F8D301A40 /* Targets Support Files */ = {
@@ -208,20 +239,6 @@
 				5D06BCCEF9C84B5832E5E2926724C6AD /* Pods-CoreDataNotification_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		FE72C2FC3C83FFE258D688EE58BE7E8E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				87BD2B764B807245B867F5357C130FB0 /* CoreDataNotification.modulemap */,
-				B20FCC31D37BF6D968CCA2A0D7C6BCC8 /* CoreDataNotification.xcconfig */,
-				8EEE7A29D2EFCE1FD38A7611845A69DA /* CoreDataNotification-dummy.m */,
-				C6B07B340D1BD06A5EDB107D91B1A6FE /* CoreDataNotification-prefix.pch */,
-				28EFF54A910B42868C1D5BAC91E4DF7C /* CoreDataNotification-umbrella.h */,
-				C37D4684107096E66655E9BD9840E81E /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/CoreDataNotification";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152ED5F01DF0028500A39A98 /* CoreDataNotification+RxSwift.swift in Sources */,
 				A27A6942CD98E681C6D67A10658F459D /* CoreDataNotification-dummy.m in Sources */,
 				DFC7E3572523D6D35906C7CFF62A0D93 /* CoreDataNotificationToken.swift in Sources */,
 			);
@@ -374,7 +392,7 @@
 /* Begin XCBuildConfiguration section */
 		1D8C9AD9516AEF4224132867F9E12A7E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B20FCC31D37BF6D968CCA2A0D7C6BCC8 /* CoreDataNotification.xcconfig */;
+			baseConfigurationReference = 4971B4B70604169522BF7FF76E7FCB0A /* CoreDataNotification.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -526,7 +544,7 @@
 		};
 		E52D5BC9C7EE86F6CC659D362B80D11B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B20FCC31D37BF6D968CCA2A0D7C6BCC8 /* CoreDataNotification.xcconfig */;
+			baseConfigurationReference = 4971B4B70604169522BF7FF76E7FCB0A /* CoreDataNotification.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

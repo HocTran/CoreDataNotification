@@ -1,8 +1,8 @@
 {
   "name": "CoreDataNotification",
   "version": "0.1.0",
-  "summary": "Lightweight notification observer for CoreData.",
-  "description": "Lightweight notification observer for CoreData.\nRead README.md to see how it works.",
+  "summary": "Lightweight notification observer written in pure Swift for CoreData.",
+  "description": "Lightweight notification observer for CoreData using Generics to provide more compile confidence, source elegent, less code.\n\nRxSwift extensions exist as well.\nInstructions and documents are in [the README](https://github.com/HocTran/CoreDataNotification/)",
   "homepage": "https://github.com/HocTran/CoreDataNotification",
   "license": {
     "type": "MIT",
@@ -18,5 +18,23 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "CoreDataNotification/Classes/**/*"
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "CoreDataNotification/Classes/**/*"
+    },
+    {
+      "name": "RxSwift",
+      "source_files": "CoreDataNotification/RxSwiftExtensions/**/*",
+      "dependencies": {
+        "CoreDataNotification/Core": [
+
+        ],
+        "RxSwift": [
+          "~> 3.0"
+        ]
+      }
+    }
+  ]
 }

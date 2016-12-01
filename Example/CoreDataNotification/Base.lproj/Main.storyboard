@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bx7-g4-CPX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OZM-pf-hls">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -8,28 +8,28 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="gmV-uW-43N">
+        <!--Tab Bar Controller-->
+        <scene sceneID="DRq-Sm-867">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bx7-g4-CPX" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XII-1p-m3F">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                <tabBarController id="OZM-pf-hls" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="S5W-bB-HsK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
                     <connections>
-                        <segue destination="Z1y-s4-Pxa" kind="relationship" relationship="rootViewController" id="kAL-2e-o1W"/>
+                        <segue destination="drd-e4-l3Y" kind="relationship" relationship="viewControllers" id="vjG-ad-aBM"/>
+                        <segue destination="bvq-og-Jiq" kind="relationship" relationship="viewControllers" id="r91-vk-iwJ"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YUx-Dw-ens" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hvO-9V-Mbw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="776.76161919040487"/>
+            <point key="canvasLocation" x="-516" y="542"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Notification Table View Controller-->
         <scene sceneID="HQG-4G-nPb">
             <objects>
-                <tableViewController id="Z1y-s4-Pxa" customClass="TableViewController" customModule="CoreDataNotification_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Z1y-s4-Pxa" customClass="NotificationTableViewController" customModule="CoreDataNotification_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="iZV-T8-j60">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,7 +59,80 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="th6-aW-vY5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="790" y="777"/>
+            <point key="canvasLocation" x="1319.2" y="148.87556221889056"/>
+        </scene>
+        <!--Rx Example Table View Controller-->
+        <scene sceneID="Oda-St-GtO">
+            <objects>
+                <tableViewController id="7Kc-eY-GZv" customClass="RxExampleTableViewController" customModule="CoreDataNotification_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="N6C-cY-kK6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="k6M-fx-xL0">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k6M-fx-xL0" id="fER-9o-dwL">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7Kc-eY-GZv" id="7N3-2B-h9B"/>
+                            <outlet property="delegate" destination="7Kc-eY-GZv" id="bWy-Wk-bWW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="SiV-eN-xPg">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="A7I-iw-7BS">
+                            <connections>
+                                <action selector="addCityWithSender:" destination="7Kc-eY-GZv" id="yIw-x3-uvX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="elQ-V0-POl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1319.2" y="868.51574212893559"/>
+        </scene>
+        <!--Notification-->
+        <scene sceneID="mfr-Fz-Fd9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="drd-e4-l3Y" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Notification" id="jCw-nH-wTa"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GOm-Ff-sKV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Z1y-s4-Pxa" kind="relationship" relationship="rootViewController" id="uRf-e8-AoA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9j-UF-lT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="148.87556221889056"/>
+        </scene>
+        <!--RxObserver-->
+        <scene sceneID="q87-1a-8Tc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bvq-og-Jiq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="RxObserver" id="Ptd-0W-wiF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bD6-68-XVU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7Kc-eY-GZv" kind="relationship" relationship="rootViewController" id="ej2-DS-LwD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ann-AX-h2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="868.51574212893559"/>
         </scene>
     </scenes>
 </document>

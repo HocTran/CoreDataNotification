@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'CoreDataNotification'
   s.version          = '0.1.0'
-  s.summary          = 'Lightweight notification observer for CoreData.'
+  s.summary          = 'Lightweight notification observer written in pure Swift for CoreData.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,8 +18,11 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Lightweight notification observer for CoreData.
-Read README.md to see how it works.
+Lightweight notification observer for CoreData using Generics to provide more compile confidence, source elegent, less code.
+
+RxSwift extensions exist as well.
+Instructions and documents are in [the README](https://github.com/HocTran/CoreDataNotification/)
+
                        DESC
 
   s.homepage         = 'https://github.com/HocTran/CoreDataNotification'
@@ -30,14 +33,17 @@ Read README.md to see how it works.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  # s.source_files = 'CoreDataNotification/Classes/**/*'
+  s.default_subspec = 'Core'
 
-  s.source_files = 'CoreDataNotification/Classes/**/*'
+  s.subspec 'Core' do |ss|
+      ss.source_files = 'CoreDataNotification/Classes/**/*'
+  end
   
-  # s.resource_bundles = {
-  #   'CoreDataNotification' => ['CoreDataNotification/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'RxSwift' do |ss|
+      ss.source_files = 'CoreDataNotification/RxSwiftExtensions/**/*'
+      ss.dependency 'CoreDataNotification/Core'
+      ss.dependency 'RxSwift', '~> 3.0'
+  end
+  
 end
