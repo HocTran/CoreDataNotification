@@ -41,7 +41,7 @@ Instructions and documents are in [the README](https://github.com/HocTran/CoreDa
   end
   
   s.subspec 'RxSwift' do |ss|
-      ss.source_files = 'CoreDataNotification/RxSwiftExtensions/*.swift'
+      ss.source_files = 'CoreDataNotification/RxSwift/*.swift'
       ss.dependency 'CoreDataNotification/Core'
       ss.dependency 'RxSwift', '~> 3.0'
   end

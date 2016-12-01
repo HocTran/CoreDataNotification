@@ -3,10 +3,4 @@ use_frameworks!
 target 'CoreDataNotification_Example' do
   pod 'CoreDataNotification', :path => '../'
   pod 'CoreDataNotification/RxSwift', :path => '../'
-
-  target 'CoreDataNotification_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
