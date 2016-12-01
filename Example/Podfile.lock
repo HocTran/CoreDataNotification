@@ -2,17 +2,23 @@ PODS:
   - CoreDataNotification (0.1.0):
     - CoreDataNotification/Core (= 0.1.0)
   - CoreDataNotification/Core (0.1.0)
+  - CoreDataNotification/RxSwift (0.1.0):
+    - CoreDataNotification/Core
+    - RxSwift (~> 3.0)
+  - RxSwift (3.0.1)
 
 DEPENDENCIES:
   - CoreDataNotification (from `../`)
+  - CoreDataNotification/RxSwift (from `../`)
 
 EXTERNAL SOURCES:
   CoreDataNotification:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CoreDataNotification: 0efb5bb6cc80130836ba5e6d054d7ddd973ead5b
+  CoreDataNotification: baee15fae6818bc1091252fda1994a7087560d60
+  RxSwift: af5680055c4ad04480189c52d28385b1029493a6
 
-PODFILE CHECKSUM: 4efeef8dd920f3db1d9f332cda0fba00ef6b5360
+PODFILE CHECKSUM: 59f7aa19d0e127b9e141e31d4ac01ddc9a0c4793
 
 COCOAPODS: 1.2.0.beta.1

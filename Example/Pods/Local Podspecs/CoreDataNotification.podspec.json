@@ -22,11 +22,11 @@
   "subspecs": [
     {
       "name": "Core",
-      "source_files": "CoreDataNotification/Classes/**/*"
+      "source_files": "CoreDataNotification/*.swift"
     },
     {
       "name": "RxSwift",
-      "source_files": "CoreDataNotification/RxSwiftExtensions/**/*",
+      "source_files": "CoreDataNotification/RxSwiftExtensions/*.swift",
       "dependencies": {
         "CoreDataNotification/Core": [
 
